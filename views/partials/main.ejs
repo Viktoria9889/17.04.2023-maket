@@ -1,0 +1,306 @@
+<div class="products_navigation">
+    <img src="/img/home-page.png">
+    <img src="/img/arrow.png" class="arrow">
+    <h4><a href="#" class="nav_text"><%= navTextA %></a></h4>
+    <img src="/img/arrow.png" class="arrow">
+    <h4><a href="#" class="nav_text"><%= navTextB %></a></h4>
+    <img src="/img/arrow.png" class="arrow">
+    <h4><a href="#" class="nav_text"><%= navTextC %></a></h4>
+</div>
+
+<div class="name">
+    <span><%= name %></span>
+</div>
+
+<div class="product_ratting">
+    <div class="product_ratting_start">
+        <div class="produkt_star">
+            <img src="<%= imgStar %>" class="star">
+            <img src="<%= imgStar %>" class="star">
+            <img src="<%= imgStar %>" class="star">
+            <img src="<%= imgStar %>" class="star">
+            <img src="<%= imgStar %>" class="star">
+        </div>
+        <a href="#"><%= nambResponse %><%= response %></a>
+    </div>
+    <div class="cod">
+        <span class="cod_text">Код:</span>
+        <span><%= codNumber %></span>
+    </div>
+</div>
+</div>
+
+<div class="item_list">
+<div class="item_list_wrapper">
+    <ul class="item_list_nav">
+        <li><a href="#" class="item_list_nav_nav">Усе про товар</a></li>
+        <li><a href="#">Характеристики</a></li>
+        <li><a href="#">Відгуки</a><%= nambResponse %></li>
+        <li><a href="#">Питання</a><%= nambResponse %></li>
+        <li><a href="#">Фото</a></li>
+        <li><a href="#">Купують разом</a></li>
+    </ul>
+</div>
+</div>
+
+<div class="main_item_wrapper">
+<div class="main_item_img">
+    <div><%- include('added dies/topSales'); %></div>
+    <img src="<%= mainItemImg %>" class="main_item_img_img">
+    <div class="img_xs"><img src="<%= imgXs %>" class="img_xs_img"></div>
+    <a href="#">Детальніше про товар</a>
+</div>
+<div class="item_info_wraper">
+    <div class="item_info_price_wraper">
+        <div class="item_info_price_price_wraper">
+            <div class="price_wraper">
+                <div class="price">
+                    <span><%= price %></span>
+                    <span><%= priceIcon %></span>
+                </div>
+                <span>
+                    <%= priceText %>
+                </span>
+            </div>
+            <div class="price_icon">
+                <img src="<%= priceImgA %>" class="price_img_a">
+                <img src="<%= priceImgB %>" class="price_img_a">
+                <span><%= amount %></span>
+            </div>
+        </div>
+        <div class="price_button">
+            <button type="button" class="button_bay"><img src="/img/basket-white.png" class="basket_white"><span>Купити</span></button>
+        </div>
+    </div>
+    
+    <div class="main_item_seller_wrapper">
+        <div class="main_item_seller_seller">
+            <div>
+                <span>Продавець:</span><span class="seller_name"><%= seller %></span>
+            </div>
+            <div class="seller_rating">
+                <img src="<%= imgStar %>" class="starB">
+                <img src="<%= imgStar %>" class="starB">
+                <img src="<%= imgStar %>" class="starB">
+                <img src="<%= imgStar %>" class="starB">
+                <img src="<%= imgStar %>" class="starB">
+                <span class="seller_rating_span_a"><%= sellerRating %></span><span class="seller_rating_span_b"><%= sellerRatingVoice %></span>
+            </div>
+        </div>
+    </div>
+    <div class="main_item_seller_info_wraper">
+        <div class="seller_text">
+            <img src="/img/question.png" class="seller_text_icon">
+            <span>Написати продавцю</span>
+        </div>
+        <div class="seller_text">
+            <img src="/img/warning.jpg" class="seller_text_icon">
+            <span>Поскаржитись на товар</span>
+        </div>
+        <div class="seller_text">
+            <img src="/img/square.png" class="seller_text_icon">
+            <span>Сторінка продавця</span>
+        </div>
+    </div>
+
+    <div class="main_item_delivery_info_wraper">
+        <span>Доставка в:</span><span class="city"><%= city %></span>
+    </div>
+    <div class="main_item_delivery_info_b_wraper">
+        <div class="delivery_info_wrapper">
+            <div class="delivery_wrapper">
+                <div class="delivery_a">
+                    <img src="/img/house.jpg" class="house">
+                    <div class="delivery_info">
+                        <span>Сaмовивіз з відділень поштових<br> операторів</span>
+                        <a href="#" class="delivery_map">Показати на карті</a>
+                    </div>
+                </div>
+                <span>
+                    за тарифами<br> перевізника
+                </span>
+            </div>
+            <div class="delivery_wrapper">
+                <div class="delivery_a">
+                    <img src="/img/box.png" class="house">
+                    <div class="delivery_info">
+                        <span>Доставка кур'єром</span>
+                        <span class="nova_poshta">Нова пошта</span>
+                    </div>
+                </div>
+                <span>
+                    за тарифами<br> перевізника
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="payment_wrapper">
+        <div class="payment_flex">
+            <img src="/img/wallet.svg" class="wallet">
+            <div class="payment_text">
+                <span class="payment_payment_text">Оплата.</span><span>Оплата під час отримання товару, Безготівковий для юридичних та фізичних осіб
+                    На даний момент використання бонусів на цей товар недоступне.</span>
+            </div>
+        </div>
+    </div>
+    <div class="security_wrapper">
+        <div class="security_flex">
+            <img src="/img/security.svg" class="security">
+            <div class="security_text">
+                <span class="security_security_text">Гарантія.</span><span>Обмін/повернення товару впродовж 14 днів</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<h2 class="main_item_h2">Також вас можуть зацікавити</h2>
+
+<div class="interesting_wrapper">
+<div class="litle_title">
+    <div class="yellow_heart">
+        <img src="<%= imgYellowHeart %>" class="imgYellowHeart">
+    </div>
+    <div class="flag">
+        <div><%- include('added dies/flagUaLittle'); %></div>
+    </div>
+    <div class="little_title_wrapper">
+        <div class="little_img">
+            <img src="<%= titleA %>" class="imgYellowHeart">
+        </div>
+        <div class="little_item_text">
+            <span><%= textTitleA %></span>
+        </div>
+        <div class="little_response">
+            <div><%- include('added dies/leaveReview'); %></div>
+        </div>
+        <div class="little_price">
+           <span><%= price %></span> 
+           <span><%= priceIcon %></span>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="litle_title">
+    <div class="yellow_heart">
+        <img src="<%= imgYellowHeart %>" class="imgYellowHeart">
+    </div>
+    <div class="top_sales_little_wrapper">
+        <%- include('added dies/topSalesLittle'); %>
+    </div>
+    <div class="little_title_wrapper">
+        <div class="little_img">
+            <img src="<%= titleB %>" class="imgYellowHeart">
+        </div>
+        <div class="little_item_text">
+            <span><%= textTitleB %></span>
+        </div>
+        <div class="little_response">
+            <div><%- include('added dies/starsReview'); %></div>
+        </div>
+        <div class="little_price">
+           <span><%= price %></span> 
+           <span><%= priceIcon %></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="litle_title">
+    <div class="yellow_heart">
+        <img src="<%= imgYellowHeart %>" class="imgYellowHeart">
+    </div>
+    <div class="flag">
+        <div><%- include('added dies/flagUaLittle'); %></div>
+    </div>
+    <div class="little_title_wrapper">
+        <div class="little_img">
+            <img src="<%= titleC %>" class="imgYellowHeart">
+        </div>
+        <div class="little_item_text">
+            <span><%= textTitleC %></span>
+        </div>
+        <div class="little_response">
+            <div><%- include('added dies/leaveReview'); %></div>
+        </div>
+        <div class="little_price">
+           <span><%= price %></span> 
+           <span><%= priceIcon %></span>
+        </div>
+    </div>
+</div>
+
+<div class="litle_title">
+    <div class="yellow_heart">
+        <img src="<%= imgYellowHeart %>" class="imgYellowHeart">
+    </div>
+    <div class="top_sales_little_wrapper">
+        <%- include('added dies/topSalesLittle'); %>
+    </div>
+    <div class="little_title_wrapper">
+        <div class="little_img">
+            <img src="<%= titleD %>" class="imgYellowHeart">
+        </div>
+        <div class="little_item_text">
+            <span><%= textTitleD %></span>
+        </div>
+        <div class="little_response">
+            <div><%- include('added dies/leaveReview'); %></div>
+        </div>
+        <div class="little_price">
+           <span><%= price %></span> 
+           <span><%= priceIcon %></span>
+        </div>
+    </div>
+</div>
+
+<div class="litle_title">
+    <div class="yellow_heart">
+        <img src="<%= imgYellowHeart %>" class="imgYellowHeart">
+    </div>
+    <div class="flag">
+        <div><%- include('added dies/flagUaLittle'); %></div>
+    </div>
+    <div class="little_title_wrapper">
+        <div class="little_img">
+            <img src="<%= titleA %>" class="imgYellowHeart">
+        </div>
+        <div class="little_item_text">
+            <span><%= textTitleE %></span>
+        </div>
+        <div class="little_response">
+            <div><%- include('added dies/leaveReview'); %></div>
+        </div>
+        <div class="little_price">
+           <span><%= price %></span> 
+           <span><%= priceIcon %></span>
+        </div>
+    </div>
+</div>
+
+<div class="litle_title">
+    <div class="yellow_heart">
+        <img src="<%= imgYellowHeart %>" class="imgYellowHeart">
+    </div>
+    <div class="flag">
+        <div><%- include('added dies/flagUaLittle'); %></div>
+    </div>
+    <div class="little_title_wrapper">
+        <div class="little_img">
+            <img src="<%= titleF %>" class="imgYellowHeart">
+        </div>
+        <div class="little_item_text">
+            <span><%= textTitleF %></span>
+        </div>
+        <div class="little_response">
+            <div><%- include('added dies/leaveReview'); %></div>
+        </div>
+        <div class="little_price">
+           <span><%= price %></span> 
+           <span><%= priceIcon %></span>
+        </div>
+    </div>
+</div>
